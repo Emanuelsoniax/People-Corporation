@@ -39,6 +39,7 @@ public class Dragable : MonoBehaviour
     {
         audioSource.PlayOneShot(pickup);
         offset = GetMousePos() - (Vector2)transform.position;
+        transform.eulerAngles = new Vector3(0,0,0);
     }
 
     private void OnMouseDrag()
@@ -63,7 +64,8 @@ public class Dragable : MonoBehaviour
     {
         foreach(Target target in possibleTargets)
         {
-            if(Vector2.Distance(transform.position, target.transform.position) < target.snapDistance)
+            if(Mathf.Abs(transform.position.x - target.transform.position.x)< target.snapDistanceX/2 &&
+                Mathf.Abs(transform.position.y - target.transform.position.y) < target.snapDistanceY/2)
             {
                 return target;
             }

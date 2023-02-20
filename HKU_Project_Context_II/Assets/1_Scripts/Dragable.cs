@@ -23,22 +23,25 @@ public class Dragable : MonoBehaviour
     private AudioClip dropped;
 
     [Header("Debug")]
+    [HideInInspector]
     public bool placed;
-    [SerializeField]
-    private List<Target> possibleTargets;
+    private List<Target> possibleTargets = new List<Target>();
     private Vector2 offset;
     private Vector2 originalPos;
 
     private void Awake()
     {
         originalPos = transform.position;
+
         FindPossibleTargets();
+        
     }
 
     private void OnMouseDown()
     {
         audioSource.PlayOneShot(pickup);
         offset = GetMousePos() - (Vector2)transform.position;
+        transform.eulerAngles = new Vector3(0,0,0);
     }
 
     private void OnMouseDrag()
@@ -50,7 +53,7 @@ public class Dragable : MonoBehaviour
     {
         if(CheckForTarget()!= null)
         {
-            CheckForTarget().Placed(this);
+            CheckForTarget().Placed((Document)this);
         }
         else
         {
@@ -63,7 +66,8 @@ public class Dragable : MonoBehaviour
     {
         foreach(Target target in possibleTargets)
         {
-            if(Vector2.Distance(transform.position, target.transform.position) < target.snapDistance)
+            if(Mathf.Abs(transform.position.x - target.transform.position.x)< target.snapDistanceX/2 &&
+                Mathf.Abs(transform.position.y - target.transform.position.y) < target.snapDistanceY/2)
             {
                 return target;
             }
@@ -89,11 +93,17 @@ public class Dragable : MonoBehaviour
     private void FindPossibleTargets()
     {
         Target[] targets = FindObjectsOfType<Target>();
+        Debug.Log(targets.Length);
         foreach(Target target in targets)
         {
             if(target.compatibleDragables.HasFlag(type))
             {
+                Debug.Log(target.name);
                 possibleTargets.Add(target);
+            }
+            else
+            {
+                continue;
             }
         }
     }

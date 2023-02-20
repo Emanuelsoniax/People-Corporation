@@ -53,6 +53,9 @@ TagManager:
   - name: Card
     uniqueID: 544305685
     locked: 0
+  - name: Tools
+    uniqueID: 1192393177
+    locked: 0
   - name: Overlay
     uniqueID: 2885433659
     locked: 0

@@ -29,7 +29,6 @@ public class CameraMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        Debug.Log(size.x / 2);
         if (!cameraLocked)
         {
             if (!_x)

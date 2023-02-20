@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 public enum DocumentStatus {Unstamped, Declined, Approved}
 
 [System.Serializable]
@@ -10,6 +11,8 @@ public class Document : Dragable, IStampable
 {
     [Header("Document Settings")]
     public DocumentStatus docStatus;
+    [SerializeField]
+    private DocumentText documentText;
 
     [Header("Sprites")]
     [SerializeField]
@@ -19,9 +22,18 @@ public class Document : Dragable, IStampable
     [SerializeField]
     private Sprite approvedSprite;
 
+
     private void Start()
     {
+        
         UpdateStatus();
+        UpdateText();
+    }
+
+    private void UpdateText()
+    {
+        documentText.titleText.text = documentText.documentTitle;
+        documentText.descriptionText.text = documentText.documentDescription;
     }
 
     private void UpdateStatus()
@@ -54,4 +66,19 @@ public class Document : Dragable, IStampable
             UpdateStatus();
         }
     }
+
+    [System.Serializable]
+    public class DocumentText
+    {
+        [Tooltip ("The title of the document")]
+        public string documentTitle;
+        [Tooltip ("The text for the document")]
+        public string documentDescription;
+        [Tooltip("UI element in which the title will be displayed")]
+        public TextMeshProUGUI titleText;
+        [Tooltip("UI element in which the text will be displayed")]
+        public TextMeshProUGUI descriptionText;
+    }
 }
+
+

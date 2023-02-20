@@ -32,7 +32,7 @@ public class Target : MonoBehaviour
     [Tooltip ("Functions placed here will be excecuted once something is placed on this target")]
     public OnPlacedEvent OnPlaced;
 
-    public void Placed(Dragable dragable)
+    public void Placed(Dragable document)
     {
         Debug.Log("Dragable Placed");
         audioSource.PlayOneShot(placed);
@@ -42,16 +42,16 @@ public class Target : MonoBehaviour
         float timeElapsed = 0;
         while (timeElapsed < 2)
         {
-            dragable.transform.position = Vector2.Lerp(dragable.transform.position, transform.position, timeElapsed / 2);
+            document.transform.position = Vector2.Lerp(document.transform.position, transform.position, timeElapsed / 2);
             timeElapsed += Time.deltaTime;
         }
-        dragable.transform.position = transform.position;
-            dragable.transform.rotation = transform.rotation;
+        document.transform.position = transform.position;
+            document.transform.rotation = transform.rotation;
         }
         else
         {
-            var offset = Camera.main.ScreenToWorldPoint(Input.mousePosition) - dragable.transform.position;
-            dragable.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) - offset;
+            var offset = Camera.main.ScreenToWorldPoint(Input.mousePosition) - document.transform.position;
+            document.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) - offset;
         }
 
         OnPlaced.Invoke();

@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
@@ -12,7 +13,7 @@ public class CameraMovement : MonoBehaviour
     private float cameraSpeed;
     [SerializeField]
     [Tooltip("Locks the camera movement")]
-    private bool cameraLocked;
+    public bool cameraLocked;
 
     [Header("Constraints")]
     [SerializeField]
@@ -27,6 +28,13 @@ public class CameraMovement : MonoBehaviour
     [SerializeField]
     [Tooltip("Visualises the playing field")]
     private bool drawGizmos;
+
+    [Header("Targets")]
+    [SerializeField]
+    private Transform desktopPos;
+    [SerializeField]
+    private Transform deskPos;
+
 
     // Update is called once per frame
     void FixedUpdate()
@@ -69,6 +77,39 @@ public class CameraMovement : MonoBehaviour
                 }
             }
         }
+    }
+
+    public IEnumerator MoveToDesktop()
+    {
+        float elapsedTime = 0;
+        while (elapsedTime < 3)
+        {
+            cam.transform.position = Vector2.Lerp(cam.transform.position, desktopPos.position, (elapsedTime / 3));
+            elapsedTime += Time.deltaTime;
+
+            // Yield here
+            yield return null;
+        }
+        // Make sure we got there
+        cam.transform.position = desktopPos.position;
+        yield return null;
+    }
+
+    public IEnumerator MoveToDesk()
+    {
+        float elapsedTime = 0;
+        while (elapsedTime < 5)
+        {
+            cam.transform.position = Vector2.Lerp(cam.transform.position, deskPos.position, (elapsedTime / 5));
+            elapsedTime += Time.deltaTime;
+
+            // Yield here
+            yield return null;
+        }
+        // Make sure we got there
+        cam.transform.position = deskPos.position;
+        cameraLocked = false;
+        yield return null;
     }
 
     private void OnDrawGizmos()

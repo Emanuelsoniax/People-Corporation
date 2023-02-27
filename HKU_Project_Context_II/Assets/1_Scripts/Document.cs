@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 public enum DocumentStatus {Unstamped, Declined, Approved}
 
@@ -16,7 +17,7 @@ public class Document : Dragable, IStampable
 
     [Header("Sprites")]
     [SerializeField]
-    private Sprite unstampedSprite;
+    private Image stampImage;
     [SerializeField]
     private Sprite declinedSprite;
     [SerializeField]
@@ -41,13 +42,16 @@ public class Document : Dragable, IStampable
         switch (docStatus)
         {
             case DocumentStatus.Unstamped:
-                GetComponent<SpriteRenderer>().sprite = unstampedSprite;
+                stampImage.sprite = null;
+                stampImage.color = Color.clear;
                 return;
             case DocumentStatus.Declined:
-                GetComponent<SpriteRenderer>().sprite = declinedSprite;
+                stampImage.sprite = declinedSprite;
+                stampImage.color = Color.white;
                 return;
             case DocumentStatus.Approved:
-                GetComponent<SpriteRenderer>().sprite = approvedSprite;
+                stampImage.sprite = approvedSprite;
+                stampImage.color = Color.white;
                 return;
         }
     }

@@ -93,12 +93,10 @@ public class Dragable : MonoBehaviour
     private void FindPossibleTargets()
     {
         Target[] targets = FindObjectsOfType<Target>();
-        Debug.Log(targets.Length);
         foreach(Target target in targets)
         {
             if(target.compatibleDragables.HasFlag(type))
             {
-                Debug.Log(target.name);
                 possibleTargets.Add(target);
             }
             else

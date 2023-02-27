@@ -608,9 +608,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   edgeSize: 10
   cameraSpeed: 10
-  cameraLocked: 1
+  cameraLocked: 0
   _x: 0
-  _y: 1
+  _y: 0
   size: {x: 36.97, y: 13.68}
   drawGizmos: 0
 --- !u!114 &582572706
@@ -1116,6 +1116,7 @@ MonoBehaviour:
     companySlider: {fileID: 1111065742}
     playerConciousness: 0.74
     conciousnessSlider: {fileID: 1084273192}
+    dailyIncome: 0
 --- !u!1 &927514430
 GameObject:
   m_ObjectHideFlags: 0
@@ -1242,6 +1243,19 @@ PrefabInstance:
     - target: {fileID: 2499219003652333665, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: documentText.documentTitle
+      value: 'BREAKING NEWS: STUDENTS FORGET APPOINTMENT WITH KAREN'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: documentText.documentDescription
+      value: Team Oranje thought the meeting was on Thursday, but it was actually
+        the day prior
       objectReference: {fileID: 0}
     - target: {fileID: 2499219003652333674, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
       propertyPath: m_Name

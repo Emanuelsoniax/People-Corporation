@@ -3,6 +3,8 @@ using UnityEngine;
 public class CameraMovement : MonoBehaviour
 {
     [SerializeField]
+    private Camera cam;
+    [SerializeField]
     [Tooltip("The offset from the border in which the camera will start moving")]
     private float edgeSize;
     [SerializeField]
@@ -33,36 +35,36 @@ public class CameraMovement : MonoBehaviour
         {
             if (!_x)
             {
-                if (!(transform.position.x > size.x / 2))
+                if (!(cam.transform.position.x > size.x / 2))
                 {
                     if (Input.mousePosition.x > Screen.width - edgeSize)
                     {
-                        transform.position += new Vector3(cameraSpeed * Time.deltaTime, 0);
+                        cam.transform.position += new Vector3(cameraSpeed * Time.deltaTime, 0);
                     }
                 }
-                if (!(transform.position.x < -size.x / 2))
+                if (!(cam.transform.position.x < -size.x / 2))
                 {
                     if (Input.mousePosition.x < edgeSize)
                     {
-                        transform.position -= new Vector3(cameraSpeed * Time.deltaTime, 0);
+                        cam.transform.position -= new Vector3(cameraSpeed * Time.deltaTime, 0);
                     }
                 }
             }
 
             if (!_y)
             {
-                if (!(transform.position.y > size.y / 2))
+                if (!(cam.transform.position.y > size.y / 2))
                 {
                     if (Input.mousePosition.y > Screen.height - edgeSize)
                     {
-                        transform.position += new Vector3(0, cameraSpeed * Time.deltaTime);
+                        cam.transform.position += new Vector3(0, cameraSpeed * Time.deltaTime);
                     }
                 }
-                if (!(transform.position.y < -size.y / 2))
+                if (!(cam.transform.position.y < -size.y / 2))
                 {
                     if (Input.mousePosition.y < edgeSize)
                     {
-                        transform.position -= new Vector3(0, cameraSpeed * Time.deltaTime);
+                        cam.transform.position -= new Vector3(0, cameraSpeed * Time.deltaTime);
                     }
                 }
             }

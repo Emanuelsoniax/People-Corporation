@@ -518,7 +518,6 @@ GameObject:
   m_Component:
   - component: {fileID: 582572704}
   - component: {fileID: 582572703}
-  - component: {fileID: 582572705}
   - component: {fileID: 582572702}
   - component: {fileID: 582572706}
   m_Layer: 0
@@ -594,25 +593,6 @@ Transform:
   m_Father: {fileID: 821715643}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &582572705
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 582572701}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03ab66006a856ef41a895adfaf308312, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  edgeSize: 10
-  cameraSpeed: 10
-  cameraLocked: 0
-  _x: 0
-  _y: 0
-  size: {x: 36.97, y: 13.68}
-  drawGizmos: 0
 --- !u!114 &582572706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1071,6 +1051,7 @@ GameObject:
   m_Component:
   - component: {fileID: 821715643}
   - component: {fileID: 821715644}
+  - component: {fileID: 821715645}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1117,6 +1098,26 @@ MonoBehaviour:
     playerConciousness: 0.74
     conciousnessSlider: {fileID: 1084273192}
     dailyIncome: 0
+--- !u!114 &821715645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821715642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03ab66006a856ef41a895adfaf308312, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 582572703}
+  edgeSize: 10
+  cameraSpeed: 10
+  cameraLocked: 0
+  _x: 0
+  _y: 0
+  size: {x: 36.97, y: 13.68}
+  drawGizmos: 0
 --- !u!1 &927514430
 GameObject:
   m_ObjectHideFlags: 0

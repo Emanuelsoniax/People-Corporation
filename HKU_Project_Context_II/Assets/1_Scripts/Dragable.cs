@@ -39,14 +39,21 @@ public class Dragable : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if (!placed)
+        {
         audioSource.PlayOneShot(pickup);
         offset = GetMousePos() - (Vector2)transform.position;
         transform.eulerAngles = new Vector3(0,0,0);
+
+        }
     }
 
     private void OnMouseDrag()
     {
-        transform.position = GetMousePos() - offset;  
+        if (!placed)
+        {
+            transform.position = GetMousePos() - offset;  
+        }
     }
 
     private void OnMouseUp()

@@ -7,7 +7,7 @@ using TMPro;
 public class Manager : MonoBehaviour
 {
     [SerializeField]
-    private Stats stats;
+    public Stats stats;
     
     public enum GamePhase { MainMenu =0, Desktop=1, Workday=2, EndWorkday=3}
     public enum GameStatus { Play, Pause}
@@ -35,6 +35,7 @@ public class Manager : MonoBehaviour
 
     private void Start()
     {
+        cam.MoveToDesktop();
         stats.UpdateUI();
         SwitchPhase(0);
     }
@@ -187,11 +188,11 @@ public class Stats
     private Slider conciousnessSlider;
 
     [SerializeField]
-    private float dailyIncome;
-    public float DailyIncome
+    private float companyIncome;
+    public float CompanyIncome
     {
-        get { return dailyIncome; }
-        set { dailyIncome = value;
+        get { return companyIncome; }
+        set { companyIncome = value;
               UpdateUI();
             }
     }

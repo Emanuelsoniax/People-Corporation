@@ -14,6 +14,10 @@ public class Document : Dragable, IStampable
     public DocumentStatus docStatus;
     [SerializeField]
     private DocumentText documentText;
+    [SerializeField]
+    public DocValues approvedValues;
+    [SerializeField]
+    public DocValues declinedValues;
 
     [Header("Sprites")]
     [SerializeField]
@@ -82,6 +86,27 @@ public class Document : Dragable, IStampable
         public TextMeshProUGUI titleText;
         [Tooltip("UI element in which the text will be displayed")]
         public TextMeshProUGUI descriptionText;
+    }
+
+    [System.Serializable]
+    public class DocValues
+    {
+        public float earthStats;
+        public float companyReputation;
+        public float companyEconomy;
+        public float playerConciousness;
+        public float companyIncome;
+
+        public void ApplyValues()
+        {
+            Manager manager = FindObjectOfType<Manager>();
+            manager.stats.CompanyEconomy += companyEconomy;
+            manager.stats.CompanyIncome += companyIncome;
+            manager.stats.CompanyReputation += companyReputation;
+            manager.stats.PlayerConciousness += playerConciousness;
+            manager.stats.EarthStats += earthStats;
+        }
+
     }
 }
 

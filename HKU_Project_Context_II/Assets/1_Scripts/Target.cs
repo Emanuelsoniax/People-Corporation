@@ -32,10 +32,13 @@ public class Target : MonoBehaviour
     [Tooltip ("Functions placed here will be excecuted once something is placed on this target")]
     public OnPlacedEvent OnPlaced;
 
-    public void Placed(Dragable document)
+    public virtual void Placed(Dragable document)
     {
-        Debug.Log("Dragable Placed");
-        audioSource.PlayOneShot(placed);
+        if (!document.placed)
+        {
+            Debug.Log("Dragable Placed");
+            audioSource.PlayOneShot(placed);
+        }
 
         if (snap)
         {
@@ -46,7 +49,7 @@ public class Target : MonoBehaviour
             timeElapsed += Time.deltaTime;
         }
         document.transform.position = transform.position;
-            document.transform.rotation = transform.rotation;
+            document.transform.eulerAngles = new Vector3(0, 0, 90);
         }
         else
         {

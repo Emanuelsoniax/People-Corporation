@@ -35,8 +35,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.00000035762787, y: -0.439}
-  m_SizeDelta: {x: 1.5508, y: 0.5828}
+  m_AnchoredPosition: {x: 0.1471, y: -0.342}
+  m_SizeDelta: {x: 1.169, y: 0.3888}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2499219003334279729
 CanvasRenderer:
@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'sample headline: set the title in document settings'
+  m_text: 'sample headline: set the title in  settings'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -93,12 +93,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.12
+  m_fontSize: 0.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 0.12
-  m_fontSizeMax: 0.15
+  m_fontSizeMin: 0.1
+  m_fontSizeMax: 0.12
   m_fontStyle: 17
   m_HorizontalAlignment: 32
   m_VerticalAlignment: 256
@@ -174,8 +174,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1.7676, y: 2.8984}
+  m_AnchoredPosition: {x: 0, y: -0.0048}
+  m_SizeDelta: {x: 1.7676, y: 2.2993}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &2499219003370435084
 Canvas:
@@ -273,8 +273,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.00000035762787, y: -1.7751}
-  m_SizeDelta: {x: 1.5508, y: 1.969}
+  m_AnchoredPosition: {x: 0.0383, y: -1.4602}
+  m_SizeDelta: {x: 1.3866, y: 0.8464}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2499219003573669526
 CanvasRenderer:
@@ -383,8 +383,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2499219003652333665}
-  - component: {fileID: 2499219003652333670}
   - component: {fileID: 2499219003652333667}
+  - component: {fileID: 2499219003652333670}
   - component: {fileID: 2499219003652333668}
   - component: {fileID: 2499219003652333669}
   - component: {fileID: 2499219003652333664}
@@ -411,6 +411,45 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2499219003652333667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2499219003652333674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55331832bc79aa946aef50de2cf62076, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 2
+  audioSource: {fileID: 2499219003652333668}
+  pickup: {fileID: 0}
+  dropped: {fileID: 0}
+  placed: 0
+  docStatus: 0
+  documentText:
+    documentTitle: 'BREAKING NEWS: LANDLORD EVICTS STUDENT'
+    documentDescription: During the pandemic a lot of students have been evicted
+      from their homes due to capitalism.
+    titleText: {fileID: 2499219003334279728}
+    descriptionText: {fileID: 2499219003573669527}
+  approvedValues:
+    earthStats: 0
+    companyReputation: 0
+    companyEconomy: 0
+    playerConciousness: 0
+    companyIncome: 0
+  declinedValues:
+    earthStats: 0
+    companyReputation: 0
+    companyEconomy: 0
+    playerConciousness: 0
+    companyIncome: 0
+  stampImage: {fileID: 5306254218499344399}
+  declinedSprite: {fileID: 21300000, guid: da4885a236ab1a04889e3942c96998d9, type: 3}
+  approvedSprite: {fileID: 21300000, guid: 9f6c273da91f71e4ab231b632c986e07, type: 3}
 --- !u!212 &2499219003652333670
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -452,7 +491,7 @@ SpriteRenderer:
   m_SortingLayerID: 544305685
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: aff47ddca2027a34c9c1fb3f22e56dee, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0fd48b58da32a3345b818c93e02b6972, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -463,33 +502,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2499219003652333667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2499219003652333674}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55331832bc79aa946aef50de2cf62076, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 2
-  audioSource: {fileID: 2499219003652333668}
-  pickup: {fileID: 0}
-  dropped: {fileID: 0}
-  placed: 0
-  docStatus: 0
-  documentText:
-    documentTitle: 'BREAKING NEWS: LANDLORD EVICTS STUDENT'
-    documentDescription: During the pandemic a lot of students have been evicted
-      from their homes due to capitalism.
-    titleText: {fileID: 2499219003334279728}
-    descriptionText: {fileID: 2499219003573669527}
-  stampImage: {fileID: 5306254218499344399}
-  declinedSprite: {fileID: 21300000, guid: da4885a236ab1a04889e3942c96998d9, type: 3}
-  approvedSprite: {fileID: 21300000, guid: 9f6c273da91f71e4ab231b632c986e07, type: 3}
 --- !u!82 &2499219003652333668
 AudioSource:
   m_ObjectHideFlags: 0
@@ -649,8 +661,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.061}
-  m_SizeDelta: {x: 0, y: -2.4134}
+  m_AnchoredPosition: {x: 0.401, y: -0.952}
+  m_SizeDelta: {x: -0.9629, y: -1.995}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8161552004582532364
 CanvasRenderer:
@@ -672,7 +684,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: c2df4132539aa16459622029fd70d0c5, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}

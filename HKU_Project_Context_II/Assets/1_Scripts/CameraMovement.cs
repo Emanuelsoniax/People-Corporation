@@ -85,6 +85,7 @@ public class CameraMovement : MonoBehaviour
         while (elapsedTime < 3)
         {
             cam.transform.position = Vector2.Lerp(cam.transform.position, desktopPos.position, (elapsedTime / 3));
+            cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, 2, (elapsedTime / 3));
             elapsedTime += Time.deltaTime;
 
             // Yield here
@@ -92,15 +93,17 @@ public class CameraMovement : MonoBehaviour
         }
         // Make sure we got there
         cam.transform.position = desktopPos.position;
+        cam.orthographicSize = 2;
         yield return null;
     }
 
     public IEnumerator MoveToDesk()
     {
         float elapsedTime = 0;
-        while (elapsedTime < 5)
+        while (elapsedTime < 3)
         {
             cam.transform.position = Vector2.Lerp(cam.transform.position, deskPos.position, (elapsedTime / 5));
+            cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, 4.5f, (elapsedTime / 3));
             elapsedTime += Time.deltaTime;
 
             // Yield here
@@ -108,6 +111,7 @@ public class CameraMovement : MonoBehaviour
         }
         // Make sure we got there
         cam.transform.position = deskPos.position;
+        cam.orthographicSize = 4.5f;
         cameraLocked = false;
         yield return null;
     }

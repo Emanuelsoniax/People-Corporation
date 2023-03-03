@@ -102,7 +102,7 @@ public class Document : Dragable, IStampable
 
         public void ApplyValues()
         {
-            Manager manager = FindObjectOfType<Manager>();
+            Manager manager = GameObject.FindObjectOfType<Manager>();
             manager.stats.CompanyEconomy += companyEconomy;
             manager.stats.CompanyIncome += companyIncome;
             manager.stats.CompanyReputation += companyReputation;

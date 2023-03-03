@@ -428,6 +428,8 @@ MonoBehaviour:
   pickup: {fileID: 0}
   dropped: {fileID: 0}
   placed: 0
+  originalPos: {x: 0, y: 0}
+  upscaling: {x: 1.5, y: 1.5, z: 1.5}
   docStatus: 0
   documentText:
     documentTitle: 'BREAKING NEWS: LANDLORD EVICTS STUDENT'
@@ -436,13 +438,19 @@ MonoBehaviour:
     titleText: {fileID: 2499219003334279728}
     descriptionText: {fileID: 2499219003573669527}
   approvedValues:
-    earthStats: 0
+    land: 0
+    sea: 0
+    sky: 0
+    peopleHappiness: 0
     companyReputation: 0
     companyEconomy: 0
     playerConciousness: 0
     companyIncome: 0
   declinedValues:
-    earthStats: 0
+    land: 0
+    sea: 0
+    sky: 0
+    peopleHappiness: 0
     companyReputation: 0
     companyEconomy: 0
     playerConciousness: 0

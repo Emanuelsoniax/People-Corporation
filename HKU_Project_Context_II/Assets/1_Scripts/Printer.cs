@@ -59,6 +59,7 @@ public class Printer : MonoBehaviour
         }
         // Make sure we got there
         spawnedCard.transform.position = _targetpos;
+        spawnedCard.GetComponent<Dragable>().originalPos = _targetpos;
         yield return null;
     }
 }

@@ -15,6 +15,10 @@ public class Manager : MonoBehaviour
     public GamePhase gamePhase;
     public GameStatus gameStatus;
 
+    [Header("Printer")]
+    [SerializeField]
+    private Printer printer;
+
     [Header("Menu's")]
     [SerializeField]
     private GameObject mainMenu;
@@ -62,7 +66,7 @@ public class Manager : MonoBehaviour
 
             case GamePhase.Workday:
                 clock.Tick();
-                //spawnDocuments
+                printer.Print();
                 return;
 
             case GamePhase.EndWorkday:
@@ -128,12 +132,40 @@ public class Manager : MonoBehaviour
 [System.Serializable]
 public class Stats
 {
-    [Header ("Eath Stats")]
+    [Header("Eath Stats")]
+    [SerializeField]
+    private float land;
+    public float Land
+    {
+        get { return land; }
+        set { land = value; }
+    }
+    [SerializeField]
+    private float sea;
+    public float Sea
+    {
+        get { return sea; }
+        set { sea = value; }
+    }
+    [SerializeField]
+    private float sky;
+    public float Sky
+    {
+        get { return sky; }
+        set { sky = value; }
+    }
+    [SerializeField]
+    private float peopleHappiness;
+    public float PeopleHappiness
+    {
+        get { return peopleHappiness; }
+        set { peopleHappiness = value; }
+    }
     [SerializeField]
     private float earthStats;
     public float EarthStats
     {
-        get { return earthStats; }
+        get { return earthStats = PeopleHappiness + (Land + Sea + Sky); }
         set { earthStats = value;
               UpdateUI();
             }
@@ -164,7 +196,7 @@ public class Stats
     private float companyStats;
     public float CompanyStats
     {
-        get { companyStats = companyReputation + companyEconomy;
+        get { companyStats = CompanyReputation + CompanyEconomy;
               return companyStats; }
         set { companyStats = value;
               UpdateUI();
@@ -196,12 +228,14 @@ public class Stats
               UpdateUI();
             }
     }
-
+    [SerializeField]
+    private Slider incomeSlider;
 
     public void UpdateUI()
     {
         earthSlider.normalizedValue = EarthStats;
         companySlider.normalizedValue = CompanyStats;
         conciousnessSlider.normalizedValue = PlayerConciousness;
+        incomeSlider.normalizedValue = CompanyIncome;
     }
 }

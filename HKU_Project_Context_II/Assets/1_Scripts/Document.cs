@@ -91,7 +91,10 @@ public class Document : Dragable, IStampable
     [System.Serializable]
     public class DocValues
     {
-        public float earthStats;
+        public float land;
+        public float sea;
+        public float sky;
+        public float peopleHappiness;
         public float companyReputation;
         public float companyEconomy;
         public float playerConciousness;
@@ -104,9 +107,11 @@ public class Document : Dragable, IStampable
             manager.stats.CompanyIncome += companyIncome;
             manager.stats.CompanyReputation += companyReputation;
             manager.stats.PlayerConciousness += playerConciousness;
-            manager.stats.EarthStats += earthStats;
+            manager.stats.Land += land;
+            manager.stats.Sea += sea;
+            manager.stats.Sky += sky;
+            manager.stats.PeopleHappiness += peopleHappiness;
         }
-
     }
 }
 

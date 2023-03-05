@@ -13225,15 +13225,79 @@ PrefabInstance:
     - target: {fileID: 9076786296133389856, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
       propertyPath: cardDeck.Array.data[1]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 4547513229468395760}
     - target: {fileID: 9076786296133389856, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
       propertyPath: cardDeck.Array.data[2]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1647963932}
     - target: {fileID: 9076786296133389856, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
       propertyPath: cardDeck.Array.data[3]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2001627959}
+    - target: {fileID: 9076786296133389856, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
+      propertyPath: cardDeck.Array.data[4]
+      value: 
+      objectReference: {fileID: 79047199}
+    - target: {fileID: 9076786296133389856, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
+      propertyPath: cardDeck.Array.data[5]
+      value: 
+      objectReference: {fileID: 1717910171}
+    - target: {fileID: 9076786296133389856, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
+      propertyPath: cardDeck.Array.data[6]
+      value: 
+      objectReference: {fileID: 2499219003012641663}
+    - target: {fileID: 9076786296133389856, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
+      propertyPath: cardDeck.Array.data[7]
+      value: 
+      objectReference: {fileID: 157512709}
+    - target: {fileID: 9076786296133389856, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
+      propertyPath: cardDeck.Array.data[8]
+      value: 
+      objectReference: {fileID: 1701394746}
+    - target: {fileID: 9076786296133389856, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
+      propertyPath: cardDeck.Array.data[9]
+      value: 
+      objectReference: {fileID: 251406902}
+    - target: {fileID: 9076786296133389856, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
+      propertyPath: cardDeck.Array.data[10]
+      value: 
+      objectReference: {fileID: 2499219004702969328}
+    - target: {fileID: 9076786296133389856, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
+      propertyPath: cardDeck.Array.data[11]
+      value: 
+      objectReference: {fileID: 254714331836450321}
+    - target: {fileID: 9076786296133389856, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
+      propertyPath: cardDeck.Array.data[12]
+      value: 
+      objectReference: {fileID: 4314426986467656295}
+    - target: {fileID: 9076786296133389856, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
+      propertyPath: cardDeck.Array.data[13]
+      value: 
+      objectReference: {fileID: 672675699}
+    - target: {fileID: 9076786296133389856, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
+      propertyPath: cardDeck.Array.data[14]
+      value: 
+      objectReference: {fileID: 671394811}
+    - target: {fileID: 9076786296133389856, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
+      propertyPath: cardDeck.Array.data[15]
+      value: 
+      objectReference: {fileID: 1862567047}
+    - target: {fileID: 9076786296133389856, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
+      propertyPath: cardDeck.Array.data[16]
+      value: 
+      objectReference: {fileID: 2027010888}
+    - target: {fileID: 9076786296133389856, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
+      propertyPath: cardDeck.Array.data[17]
+      value: 
+      objectReference: {fileID: 4902373995120026283}
+    - target: {fileID: 9076786296133389856, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
+      propertyPath: cardDeck.Array.data[18]
+      value: 
+      objectReference: {fileID: 2126068074}
+    - target: {fileID: 9076786296133389856, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
+      propertyPath: cardDeck.Array.data[19]
+      value: 
+      objectReference: {fileID: 670213641962432258}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
 --- !u!114 &3387871598449380046

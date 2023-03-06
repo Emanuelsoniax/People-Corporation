@@ -23,16 +23,17 @@ public class Shredder : Target
     private void Shred(GameObject documentToShred)
     {
         StartCoroutine(MoveThroughShredder(documentToShred.transform));
-        Destroy(documentToShred,3);
+        Destroy(documentToShred,6);
     }
 
     private IEnumerator MoveThroughShredder(Transform documentToShred)
     {
         float elapsedTime = 0;
-        while (elapsedTime < 3)
+        while (elapsedTime < 10)
         {
-            documentToShred.position = Vector2.Lerp(documentToShred.position, endOfShredder.position, (elapsedTime / 3));
+            documentToShred.position = Vector2.Lerp(documentToShred.position, endOfShredder.position, (elapsedTime / 10));
             elapsedTime += Time.deltaTime;
+            yield return null;
         }
         // Make sure we got there
         documentToShred.position = endOfShredder.position;

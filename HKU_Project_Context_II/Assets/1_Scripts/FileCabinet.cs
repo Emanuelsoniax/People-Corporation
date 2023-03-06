@@ -25,7 +25,7 @@ public class FileCabinet : Target
 
         if (placedDoc.docStatus == DocumentStatus.Approved)
         {
-            placedDoc.declinedValues.ApplyValues();
+            placedDoc.approvedValues.ApplyValues();
             placedDoc.placed = true;
             Destroy(placedDoc);
         }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Printer : MonoBehaviour
 {
     [SerializeField]
-    private List<GameObject> cardDeck;
+    public List<GameObject> cardDeck;
 
     [Header("Spawn Settings")]
     private int numberOfDecks;

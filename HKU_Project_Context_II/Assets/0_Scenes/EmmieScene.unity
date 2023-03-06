@@ -148,7 +148,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1383607}
   m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -2.2712002, y: -0.011499643, z: 2.725444}
+  m_LocalPosition: {x: -2.28, y: -0.01, z: 2.725444}
   m_LocalScale: {x: 1.0569998, y: 1.0569998, z: 1.057}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1388,8 +1388,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   snap: 1
-  snapDistanceX: 3.93
-  snapDistanceY: 1.72
+  snapDistanceX: 5.51
+  snapDistanceY: 3.46
   compatibleDragables: -1
   audioSource: {fileID: 0}
   placed: {fileID: 0}
@@ -2149,6 +2149,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4180706839704689880, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
+      propertyPath: m_Value
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8759765629437103354, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -2156,10 +2160,6 @@ PrefabInstance:
     - target: {fileID: 8759765629437103354, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9076786296133389856, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
-      propertyPath: timeBetweenSpawns
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
@@ -2170,6 +2170,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2560275193969166468, guid: 814fef937dcda1a45bed729cae4892e9, type: 3}
+      propertyPath: drawGizmos
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7705652313548718269, guid: 814fef937dcda1a45bed729cae4892e9, type: 3}
       propertyPath: m_Name
       value: Stamp_Approve

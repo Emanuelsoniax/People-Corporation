@@ -67,12 +67,7 @@ public class Manager : MonoBehaviour
             case GamePhase.Workday:
                 clock.Tick();
                 printer.Print();
-
-                if(clock.currentTime >= (540 + 480))
-                {
-                    SwitchPhase(3);
-                }
-
+                CheckConditions();
                 return;
 
             case GamePhase.EndWorkday:
@@ -81,12 +76,27 @@ public class Manager : MonoBehaviour
                 return;
         }
     }
+
+    private void CheckConditions()
+    {
+        if (clock.currentTime >= (540 + 480))
+        {
+            SwitchPhase(3);
+        }
+
+        if(stats.PlayerConciousness >= 1 || stats.EarthStats <= 0 || printer.cardDeck.Count == 0 && FindObjectsOfType<Document>().Length == 0 || stats.CompanyStats <=0)
+        {
+            SwitchPhase(3);
+        }
+    }
     
     public void Resume()
     {
         gameStatus = GameStatus.Play;
         //remove UI
         pauzeMenu.SetActive(false);
+        Time.timeScale = 1;
+        cam.cameraLocked = false;
     }
 
     public void Pause()
@@ -94,6 +104,8 @@ public class Manager : MonoBehaviour
         gameStatus = GameStatus.Pause;
         //display UI
         pauzeMenu.SetActive(true);
+        Time.timeScale = 0;
+        cam.cameraLocked = true;
     }
 
     public void SwitchPhase(int _phase)
@@ -111,6 +123,7 @@ public class Manager : MonoBehaviour
             StartCoroutine(cam.MoveToDesktop());
             cam.cameraLocked = true;
             //reset time to start workday
+            clock.currentTime = 540;
             //displayUI
             gamePhase = GamePhase.Desktop;
         }
@@ -126,11 +139,10 @@ public class Manager : MonoBehaviour
         //set phase to EndWorkday
         if (_phase == 3)
         {
-            //stop time
             //displayUI
-            cam.MoveToDesktop();
-            cam.cameraLocked = true;
             gamePhase = GamePhase.EndWorkday;
+            StartCoroutine(cam.MoveToDesktop());
+            cam.cameraLocked = true;
         }
     }
 }

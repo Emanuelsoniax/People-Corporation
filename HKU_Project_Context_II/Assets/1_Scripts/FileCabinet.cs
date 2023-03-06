@@ -20,12 +20,14 @@ public class FileCabinet : Target
         {
             placedDoc.declinedValues.ApplyValues();
             placedDoc.placed = true;
+            Destroy(placedDoc);
         }
 
         if (placedDoc.docStatus == DocumentStatus.Approved)
         {
-            placedDoc.declinedValues.ApplyValues();
+            placedDoc.approvedValues.ApplyValues();
             placedDoc.placed = true;
+            Destroy(placedDoc);
         }
 
         }

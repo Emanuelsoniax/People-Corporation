@@ -111,6 +111,8 @@ public class Document : Dragable, IStampable
             manager.stats.Sea += sea;
             manager.stats.Sky += sky;
             manager.stats.PeopleHappiness += peopleHappiness;
+
+            Debug.Log("applied changes");
         }
     }
 }

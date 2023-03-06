@@ -7,7 +7,7 @@ using TMPro;
 public class Manager : MonoBehaviour
 {
     [SerializeField]
-    public Stats stats;
+    public Stats stats = new Stats();
     
     public enum GamePhase { MainMenu =0, Desktop=1, Workday=2, EndWorkday=3}
     public enum GameStatus { Play, Pause}
@@ -67,6 +67,12 @@ public class Manager : MonoBehaviour
             case GamePhase.Workday:
                 clock.Tick();
                 printer.Print();
+
+                if(clock.currentTime >= (540 + 480))
+                {
+                    SwitchPhase(3);
+                }
+
                 return;
 
             case GamePhase.EndWorkday:
@@ -138,28 +144,66 @@ public class Stats
     public float Land
     {
         get { return land; }
-        set { land = value; }
+        set { land = value;
+            if (land < 0)
+            {
+                land = 0;
+            }
+            if (land > 1)
+            {
+                land = 1;
+            }
+        }
     }
     [SerializeField]
     private float sea;
     public float Sea
     {
         get { return sea; }
-        set { sea = value; }
+        set { sea = value;
+            if (sea < 0)
+            {
+                sea = 0;
+            }
+            if (sea > 1)
+            {
+                sea = 1;
+            }
+        }
     }
     [SerializeField]
     private float sky;
     public float Sky
     {
         get { return sky; }
-        set { sky = value; }
+        set { sky = value;
+            if (sky < 0)
+            {
+                sky = 0;
+            }
+            if (sky > 1)
+            {
+                sky = 1;
+            }
+        }
     }
     [SerializeField]
     private float peopleHappiness;
     public float PeopleHappiness
     {
         get { return peopleHappiness; }
-        set { peopleHappiness = value; }
+        set
+        {
+            peopleHappiness = value;
+            if (peopleHappiness < 0)
+            {
+                peopleHappiness = 0;
+            }
+            if (peopleHappiness > 1)
+            {
+                peopleHappiness = 1;
+            }
+        }
     }
     [SerializeField]
     private float earthStats;
@@ -167,7 +211,15 @@ public class Stats
     {
         get { return earthStats = PeopleHappiness + (Land + Sea + Sky); }
         set { earthStats = value;
-              UpdateUI();
+            if (earthStats < 0)
+            {
+                earthStats = 0;
+            }
+            if (earthStats > 4)
+            {
+                earthStats = 4;
+            }
+            UpdateUI();
             }
     }
     [SerializeField]
@@ -180,6 +232,14 @@ public class Stats
     {
         get { return companyReputation; }
         set { companyReputation = value;
+            if (companyReputation < 0)
+            {
+                companyReputation = 0;
+            }
+            if (companyReputation > 1)
+            {
+                companyReputation = 1;
+            }
             UpdateUI();
             }
     }
@@ -189,7 +249,15 @@ public class Stats
     {
         get { return companyEconomy; }
         set { companyEconomy = value;
-              UpdateUI();
+            if (companyEconomy < 0)
+            {
+                companyEconomy = 0;
+            }
+            if (companyEconomy > 1)
+            {
+                companyEconomy = 1;
+            }
+            UpdateUI();
             }
     }
     [SerializeField]
@@ -199,7 +267,15 @@ public class Stats
         get { companyStats = CompanyReputation + CompanyEconomy;
               return companyStats; }
         set { companyStats = value;
-              UpdateUI();
+            if (companyStats < 0)
+            {
+                companyStats = 0;
+            }
+            if (companyStats > 2)
+            {
+                companyStats = 2;
+            }
+            UpdateUI();
             }
     }
     [SerializeField]
@@ -213,7 +289,15 @@ public class Stats
     {
         get { return playerConciousness; }
         set { playerConciousness = value;
-              UpdateUI();
+            if (playerConciousness < 0)
+            {
+                playerConciousness = 0;
+            }
+            if (playerConciousness > 1)
+            {
+                playerConciousness = 1;
+            }
+            UpdateUI();
             }
     }
     [SerializeField]
@@ -225,7 +309,15 @@ public class Stats
     {
         get { return companyIncome; }
         set { companyIncome = value;
-              UpdateUI();
+            if (companyIncome < 0)
+            {
+                companyIncome = 0;
+            }
+            if (companyIncome > 1)
+            {
+                companyIncome = 1;
+            }
+            UpdateUI();
             }
     }
     [SerializeField]
@@ -233,9 +325,9 @@ public class Stats
 
     public void UpdateUI()
     {
-        earthSlider.normalizedValue = EarthStats;
-        companySlider.normalizedValue = CompanyStats;
-        conciousnessSlider.normalizedValue = PlayerConciousness;
-        incomeSlider.normalizedValue = CompanyIncome;
+        earthSlider.value = EarthStats;
+        companySlider.value = CompanyStats;
+        conciousnessSlider.value = PlayerConciousness;
+        incomeSlider.value = CompanyIncome;
     }
 }

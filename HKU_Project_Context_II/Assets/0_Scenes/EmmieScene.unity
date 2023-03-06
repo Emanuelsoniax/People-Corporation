@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 4965fc6e7d313644c8b750908429f45b, type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: cb88764ca36835c4b9d304fe42c5b0af, type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -1725,7 +1725,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1840329672}
   m_Layer: 0
-  m_Name: desk 2
+  m_Name: Environment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2133,8 +2133,20 @@ PrefabInstance:
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3176109438683843896, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176109438683843896, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3313805374703612577, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
       propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3313805374703612577, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8759765629437103354, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
@@ -2144,6 +2156,10 @@ PrefabInstance:
     - target: {fileID: 8759765629437103354, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9076786296133389856, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
+      propertyPath: timeBetweenSpawns
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}

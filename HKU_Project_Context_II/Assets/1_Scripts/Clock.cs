@@ -5,7 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class Clock
 {
-    private float currentTime = 540;
+    public float currentTime = 540;
     public string CurrentTime
     {
         get { return TimeToString(); }

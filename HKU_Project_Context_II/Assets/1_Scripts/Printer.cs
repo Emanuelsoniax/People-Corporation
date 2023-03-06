@@ -13,28 +13,33 @@ public class Printer : MonoBehaviour
     private float timeBetweenSpawns;
 
 
-    [Header ("Positioning")]
+    [Header("Positioning")]
     [SerializeField]
     private Transform spawnPos;
     [SerializeField]
     private Transform targetPos;
     [SerializeField]
     private float offsetToPrevious;
-    
+
     private float timer = 0;
 
     public void Print()
     {
-        if(cardDeck.Count == 0)
+        if (cardDeck.Count == 0)
         {
             Debug.Log("CARD DECK IS EMPTY");
             return;
         }
-        timer += Time.deltaTime;
-        if (timer >= timeBetweenSpawns)
+
+        //Makes sure that not more than 4 documents can be in play at the same time
+        if (FindObjectsOfType<Document>().Length < 4)
         {
-            StartCoroutine(PrintDocument());
-            timer = 0;
+            timer += Time.deltaTime;
+            if (timer >= timeBetweenSpawns)
+            {
+                StartCoroutine(PrintDocument());
+                timer = 0;
+            }
         }
     }
 

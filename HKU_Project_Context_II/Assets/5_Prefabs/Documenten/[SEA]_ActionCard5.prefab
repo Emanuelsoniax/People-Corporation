@@ -509,8 +509,8 @@ MonoBehaviour:
   docStatus: 0
   documentText:
     documentTitle: 'Motion in Limine 22V : People Corporations F. Lawsuit'
-    documentDescription: 'Fight external lawsuit against Greenpeace. Might cause
-      side effects for The Company but great for personal advantages. '
+    documentDescription: 'Expand a lot of costs to fight external lawsuit against
+      Greenpeace. Great for personal advantages. '
     titleText: {fileID: 7902169202384424138}
     descriptionText: {fileID: 6205694385811323247}
   approvedValues:
@@ -529,7 +529,7 @@ MonoBehaviour:
     peopleHappiness: 0
     companyReputation: 0
     companyEconomy: 0
-    playerConciousness: 0
+    playerConciousness: -0.01
     companyIncome: -0.5
   stampImage: {fileID: 1750136636280264935}
   declinedSprite: {fileID: 21300000, guid: 74f30ba1389f85e4a9592ecfa7555317, type: 3}

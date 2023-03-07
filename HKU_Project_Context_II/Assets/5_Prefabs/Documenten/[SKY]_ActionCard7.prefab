@@ -290,7 +290,7 @@ MonoBehaviour:
     peopleHappiness: 0
     companyReputation: 0
     companyEconomy: -0.2
-    playerConciousness: 0
+    playerConciousness: -0.02
     companyIncome: 0
   stampImage: {fileID: 3935981956304243563}
   declinedSprite: {fileID: 21300000, guid: 74f30ba1389f85e4a9592ecfa7555317, type: 3}

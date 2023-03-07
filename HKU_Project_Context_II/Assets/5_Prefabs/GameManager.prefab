@@ -221,7 +221,7 @@ MonoBehaviour:
   - {fileID: 6940684293493418811, guid: 1dcf43f992183194da1e3f2118a91f58, type: 3}
   - {fileID: 8130837497910196051, guid: 34897aa6c3fbb5442a80a34f7443083e, type: 3}
   - {fileID: 6980712507712170881, guid: ff3c8ab9585c5024f86ad10523a4738a, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 7
   spawnPos: {fileID: 6857021693174895057}
   targetPos: {fileID: 4519731309131337248}
   offsetToPrevious: 2

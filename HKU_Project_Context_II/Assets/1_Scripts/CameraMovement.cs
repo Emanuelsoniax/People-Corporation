@@ -111,7 +111,7 @@ public class CameraMovement : MonoBehaviour
         }
         // Make sure we got there
         cam.transform.position = deskPos.position;
-        cam.orthographicSize = 4.5f;
+        cam.orthographicSize = 7f;
         cameraLocked = false;
         yield return null;
     }

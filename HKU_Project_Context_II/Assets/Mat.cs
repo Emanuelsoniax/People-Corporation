@@ -8,6 +8,6 @@ public class Mat : Target
     {
         base.Placed(document);
 
-        StartCoroutine(document.ScaleUp());
+        //StartCoroutine(document.ScaleUp());
     }
 }

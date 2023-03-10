@@ -13,7 +13,7 @@ public class Document : Dragable, IStampable
     [Header("Document Settings")]
     public DocumentStatus docStatus;
     [SerializeField]
-    private DocumentText documentText;
+    public DocumentText documentText;
     [SerializeField]
     public DocValues approvedValues;
     [SerializeField]

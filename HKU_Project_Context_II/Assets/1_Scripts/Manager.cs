@@ -35,6 +35,15 @@ public class Manager : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI timeDisplay;
 
+    [Header("Cursor")]
+    [SerializeField]
+    private GameObject cursor;
+    [SerializeField]
+    public bool IsGrabbing;
+    [SerializeField]
+    private Sprite regularSprite;
+    [SerializeField]
+    private Sprite grabbingSprite;
 
 
     private void Start()
@@ -68,6 +77,7 @@ public class Manager : MonoBehaviour
                 clock.Tick();
                 printer.Print();
                 CheckConditions();
+                UpdateCursor();
                 return;
 
             case GamePhase.EndWorkday:
@@ -75,6 +85,17 @@ public class Manager : MonoBehaviour
                 //display UI
                 return;
         }
+    }
+
+    private void UpdateCursor()
+    {
+        cursor.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+        if (IsGrabbing)
+        {
+            cursor.GetComponent<SpriteRenderer>().sprite = grabbingSprite;
+        }
+        else {cursor.GetComponent<SpriteRenderer>().sprite = regularSprite; }
     }
 
     private void CheckConditions()
@@ -120,6 +141,7 @@ public class Manager : MonoBehaviour
         //set phase to Desktop
         if (_phase == 1)
         {
+            cursor.SetActive(false);
             StartCoroutine(cam.MoveToDesktop());
             cam.cameraLocked = true;
             //reset time to start workday
@@ -131,6 +153,7 @@ public class Manager : MonoBehaviour
         //set phase to Workday
         if (_phase == 2)
         {
+            cursor.SetActive(true);
             StartCoroutine(cam.MoveToDesk());
             gamePhase = GamePhase.Workday;
             clock.Start();
@@ -139,6 +162,7 @@ public class Manager : MonoBehaviour
         //set phase to EndWorkday
         if (_phase == 3)
         {
+            cursor.SetActive(false);
             //displayUI
             gamePhase = GamePhase.EndWorkday;
             StartCoroutine(cam.MoveToDesktop());

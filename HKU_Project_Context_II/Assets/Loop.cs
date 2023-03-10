@@ -1,7 +1,9 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
-public enum StampType { Decline, Approve }
-public class Stamp : MonoBehaviour
+public class Loop : MonoBehaviour
 {
     [Header("Stamp settings")]
     [SerializeField]
@@ -10,6 +12,12 @@ public class Stamp : MonoBehaviour
     public float snapDistanceX;
     [Tooltip("The distance in which a Stampable will be able to be stamped")]
     public float snapDistanceY;
+    [SerializeField]
+    private GameObject zoomCanvas;
+    [SerializeField]
+    private TextMeshProUGUI titleText;
+    [SerializeField]
+    private TextMeshProUGUI descriptionText;
 
     [Header("Audio")]
     [SerializeField]
@@ -22,8 +30,8 @@ public class Stamp : MonoBehaviour
     [Tooltip("The AudioClip that's played when the Dragable is dropped")]
     private AudioClip dropped;
     [SerializeField]
-    [Tooltip("The AudioClip that's played when the Dragable is dropped")]
-    private AudioClip stamped;
+    [Tooltip("The AudioClip that's played when the Dragable is zooming")]
+    private AudioClip zoom;
 
     [Header("Gizmos")]
     [SerializeField]
@@ -63,8 +71,8 @@ public class Stamp : MonoBehaviour
 
         if (CheckForStampable() != null && CheckForStampable().docStatus == DocumentStatus.Unstamped)
         {
-            CheckForStampable().Stamp(stampType);
-            audioSource.PlayOneShot(stamped);
+            Zoom(CheckForStampable());
+            audioSource.PlayOneShot(zoom);
             Invoke("ReturnToOriginalPos", 0.5f);
         }
         else
@@ -72,6 +80,14 @@ public class Stamp : MonoBehaviour
             ReturnToOriginalPos();
         }
         audioSource.PlayOneShot(dropped);
+    }
+
+    private void Zoom(Document _document)
+    {
+        zoomCanvas.SetActive(true);
+
+        titleText.text = _document.documentText.documentTitle;
+        descriptionText.text = _document.documentText.documentDescription;
     }
 
     private void ReturnToOriginalPos()
@@ -88,7 +104,6 @@ public class Stamp : MonoBehaviour
     private void OnMouseDown()
     {
         FindObjectOfType<Manager>().IsGrabbing = true;
-
         audioSource.PlayOneShot(pickup);
         offset = GetMousePos() - (Vector2)transform.position;
         transform.eulerAngles = new Vector3(0, 0, 0);

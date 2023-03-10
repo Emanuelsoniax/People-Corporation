@@ -46,10 +46,11 @@ public class Dragable : MonoBehaviour
     {
         if (!placed)
         {
+            FindObjectOfType<Manager>().IsGrabbing = true;
             audioSource.PlayOneShot(pickup);
             offset = GetMousePos() - (Vector2)transform.position;
             transform.eulerAngles = new Vector3(0, 0, 0);
-            StartCoroutine(ScaleDown());
+            //StartCoroutine(ScaleDown());
         }
     }
 
@@ -63,6 +64,8 @@ public class Dragable : MonoBehaviour
 
     private void OnMouseUp()
     {
+        FindObjectOfType<Manager>().IsGrabbing = false;
+
         if (CheckForTarget() != null)
         {
             CheckForTarget().Placed((Document)this);

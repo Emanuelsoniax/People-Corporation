@@ -45,6 +45,9 @@ public class Printer : MonoBehaviour
 
     private IEnumerator PrintDocument()
     {
+        //speel audio af
+
+
         //Get random card from deck
         GameObject cardToSpawn = cardDeck[Random.Range(0, cardDeck.Count)];
         //Spawn card at spawn position

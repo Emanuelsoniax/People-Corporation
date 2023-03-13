@@ -64,8 +64,8 @@ public class GraphTest : MonoBehaviour
             {
                 return;
             }
-            
-            ConnectPoints(currentGraph[i].GetComponent<RectTransform>().anchoredPosition, currentGraph[i+1].GetComponent<RectTransform>().anchoredPosition)
+
+            ConnectPoints(currentGraph[i].GetComponent<RectTransform>().anchoredPosition, currentGraph[i + 1].GetComponent<RectTransform>().anchoredPosition);
         }
     }
 

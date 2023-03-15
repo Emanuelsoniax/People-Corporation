@@ -353,11 +353,14 @@ public class Stats
             {
                 companyIncome = 1;
             }
+            graph.AddValue(companyIncome);
             UpdateUI();
             }
     }
     [SerializeField]
     private Slider incomeSlider;
+    [SerializeField]
+    private Graph graph;
 
     public void UpdateUI()
     {

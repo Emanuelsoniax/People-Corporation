@@ -26,6 +26,7 @@ public class FileCabinet : Target
         if (placedDoc.docStatus == DocumentStatus.Approved)
         {
             placedDoc.approvedValues.ApplyValues();
+            placedDoc.newsContent.AcceptDoc();
             placedDoc.placed = true;
             Destroy(placedDoc);
         }

@@ -51,6 +51,6 @@ public class Clock
         int hours = intTime / 60;
         int minutes = intTime % 60;
 
-        return hours.ToString("00") + ":" + minutes.ToString("00");
+        return hours.ToString("00") + " " + minutes.ToString("00");
     }
 }

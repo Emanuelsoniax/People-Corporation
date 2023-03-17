@@ -59,7 +59,6 @@ public class Stamp : MonoBehaviour
 
     private void OnMouseUp()
     {
-        FindObjectOfType<Manager>().IsGrabbing = false;
 
         if (CheckForStampable() != null && CheckForStampable().docStatus == DocumentStatus.Unstamped)
         {
@@ -87,8 +86,6 @@ public class Stamp : MonoBehaviour
 
     private void OnMouseDown()
     {
-        FindObjectOfType<Manager>().IsGrabbing = true;
-
         audioSource.PlayOneShot(pickup);
         offset = GetMousePos() - (Vector2)transform.position;
         transform.eulerAngles = new Vector3(0, 0, 0);

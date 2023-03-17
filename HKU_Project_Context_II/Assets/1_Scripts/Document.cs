@@ -11,6 +11,7 @@ public enum DocumentStatus {Unstamped, Declined, Approved}
 public class Document : Dragable, IStampable
 {
     [Header("Document Settings")]
+    public NewsContent newsContent;
     public DocumentStatus docStatus;
     [SerializeField]
     public DocumentText documentText;

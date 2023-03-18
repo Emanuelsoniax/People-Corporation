@@ -531,10 +531,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stamp_Approve
       objectReference: {fileID: 0}
-    - target: {fileID: 7705652313548718269, guid: 814fef937dcda1a45bed729cae4892e9, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8794439503463564744, guid: 814fef937dcda1a45bed729cae4892e9, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -672,14 +668,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3176109438683843896, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3313805374703612577, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8759765629437103354, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -744,10 +732,6 @@ PrefabInstance:
     - target: {fileID: 141218822813781572, guid: c892a13787ede754bbbbc308c11d2c71, type: 3}
       propertyPath: m_Name
       value: Stamp_Decline
-      objectReference: {fileID: 0}
-    - target: {fileID: 141218822813781572, guid: c892a13787ede754bbbbc308c11d2c71, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c892a13787ede754bbbbc308c11d2c71, type: 3}
@@ -997,10 +981,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Loop
       objectReference: {fileID: 0}
-    - target: {fileID: 3898051652750109472, guid: 05bf261e91c09054bbf535c2122ba4b2, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3898051652750109477, guid: 05bf261e91c09054bbf535c2122ba4b2, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1124,7 +1104,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1008294514}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.152706, y: 6.52, z: 0}
+  m_LocalPosition: {x: -9.152706, y: 5.26, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

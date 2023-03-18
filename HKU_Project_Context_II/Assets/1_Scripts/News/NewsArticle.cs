@@ -31,6 +31,8 @@ public class NewsArticle : ScriptableObject
             }
         }
 
+        Debug.Log(unlocked);
+
         return unlocked;
     }
 }

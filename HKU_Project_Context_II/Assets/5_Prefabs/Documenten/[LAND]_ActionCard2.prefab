@@ -192,6 +192,7 @@ MonoBehaviour:
   placed: 0
   originalPos: {x: 0, y: 0}
   upscaling: {x: 1.5, y: 1.5, z: 1.5}
+  newsContent: {fileID: 11400000, guid: 039006edd3aa3eb4193980fa3cb06cd5, type: 2}
   docStatus: 0
   documentText:
     documentTitle: "Special Subpoena 55A : \u201CEnvironmentalist H. Ngoteya"

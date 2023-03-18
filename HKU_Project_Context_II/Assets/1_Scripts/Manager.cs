@@ -24,6 +24,10 @@ public class Manager : MonoBehaviour
     private GameObject mainMenu;
     [SerializeField]
     private GameObject pauzeMenu;
+    [SerializeField]
+    private GameObject startWorkday;
+    [SerializeField]
+    private GameObject endWorkday;
 
     [Header("Camera")]
     [SerializeField]
@@ -60,9 +64,11 @@ public class Manager : MonoBehaviour
                 return;
 
             case GamePhase.Desktop:
+                startWorkday.SetActive(true);
                 return;
 
             case GamePhase.Workday:
+                startWorkday.SetActive(false);
                 clock.Tick();
                 printer.Print();
                 CheckConditions();
@@ -111,6 +117,7 @@ public class Manager : MonoBehaviour
         //set phase to MainMenu
         if (_phase == 0)
         {
+            endWorkday.SetActive(false);
             mainMenu.SetActive(true);
             gamePhase = GamePhase.MainMenu;
         }
@@ -119,15 +126,19 @@ public class Manager : MonoBehaviour
         if (_phase == 1)
         {
             cam.cameraLocked = true;
+            mainMenu.SetActive(false);
             //reset time to start workday
             clock.currentTime = 540;
             //displayUI
+            startWorkday.SetActive(true);
             gamePhase = GamePhase.Desktop;
+
         }
 
         //set phase to Workday
         if (_phase == 2)
         {
+   
             gamePhase = GamePhase.Workday;
             clock.Start();
         }
@@ -136,6 +147,7 @@ public class Manager : MonoBehaviour
         if (_phase == 3)
         {
             //displayUI
+            endWorkday.SetActive(true);
             gamePhase = GamePhase.EndWorkday;
             cam.cameraLocked = true;
         }

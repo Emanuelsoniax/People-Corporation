@@ -370,6 +370,7 @@ MonoBehaviour:
   placed: 0
   originalPos: {x: 0, y: 0}
   upscaling: {x: 1.5, y: 1.5, z: 1.5}
+  newsContent: {fileID: 11400000, guid: 69ea8674c30802342862d4cbcdcc237f, type: 2}
   docStatus: 0
   documentText:
     documentTitle: 'Request for Collaboration 77M : Palm Oil'

@@ -371,6 +371,7 @@ MonoBehaviour:
   placed: 0
   originalPos: {x: 0, y: 0}
   upscaling: {x: 1.5, y: 1.5, z: 1.5}
+  newsContent: {fileID: 11400000, guid: 30b9c266e49e7cb4ebfd5de83d22748d, type: 2}
   docStatus: 0
   documentText:
     documentTitle: "Special Event 03X: \u201CForest Celebration"

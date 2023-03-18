@@ -18,8 +18,16 @@ public class NewsNetwork : MonoBehaviour
     private NewsArticle[] articles;
     private NewsArticle articleToPublish;
 
+    private void Start()
+    {
+        foreach (NewsArticle article in articles)
+        {
+            article.ResetContent();
+        }
+    }
+
     // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
         DisplayArticle(ChooseArticle());
     }
@@ -35,7 +43,12 @@ public class NewsNetwork : MonoBehaviour
         contentFilesPerArticle.Sort();
         contentFilesPerArticle.Reverse();
 
-        articleToPublish = articles[contentFilesPerArticle[0]];
+        for (int i = 0; i < articles.Length; i++)
+        {
+            if (articles[i].UnlockedContent() == contentFilesPerArticle[0]){
+                articleToPublish = articles[i];
+            }
+        }
 
         return articleToPublish;
     }
@@ -46,7 +59,7 @@ public class NewsNetwork : MonoBehaviour
         articleIntroText.text = _articleToDisplay.intro;
 
         //create content entries
-
+        int contentDisplaying = 0;
         for (int i = 0; i < _articleToDisplay.content.Length; i++)
         {
             if (_articleToDisplay.content[i].displayInNews)
@@ -60,6 +73,7 @@ public class NewsNetwork : MonoBehaviour
 
                 //set text of content entry
                 contentObject.GetComponent<TextMeshProUGUI>().text = _articleToDisplay.content[i].contentText;
+                contentDisplaying++;
             }
         }
 
@@ -70,7 +84,7 @@ public class NewsNetwork : MonoBehaviour
 
         //set position of content entry
         RectTransform outrorect = outroObject.GetComponent<RectTransform>();
-        outrorect.anchoredPosition -= new Vector2(0, _articleToDisplay.content.Length +1 * outrorect.sizeDelta.y);
+        outrorect.anchoredPosition -= new Vector2(0, (contentDisplaying +1) * outrorect.sizeDelta.y);
 
         //set text of content entry
         outroObject.GetComponent<TextMeshProUGUI>().text = _articleToDisplay.outro;

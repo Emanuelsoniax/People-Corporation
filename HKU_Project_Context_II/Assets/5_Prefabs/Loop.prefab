@@ -526,7 +526,7 @@ SpriteRenderer:
   m_SortingLayerID: 1192393177
   m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bf01292c5fe3d9b4b84e7bf7ea36edc5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -550,8 +550,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stampType: 0
-  snapDistanceX: 2.14
-  snapDistanceY: 1.66
+  snapDistanceX: 3.06
+  snapDistanceY: 2.37
   zoomCanvas: {fileID: 3898051652091153914}
   titleText: {fileID: 3898051653291682711}
   descriptionText: {fileID: 3898051652192446553}
@@ -571,8 +571,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.9439678, y: 2.1983366, z: 0.2}
+  m_Center: {x: 0.039943695, y: -0.013314724, z: 0}
 --- !u!114 &8533684527393938431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -585,7 +585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec6f1ab45886c89439ebbecf68e20e8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  showOutline: 0
+  showOutline: 1
   outlineThickness: 0.5
   outlineColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &3898051653291682706

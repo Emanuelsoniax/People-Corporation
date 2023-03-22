@@ -494,10 +494,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8533684527393938431, guid: 05bf261e91c09054bbf535c2122ba4b2, type: 3}
-      propertyPath: showOutline
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05bf261e91c09054bbf535c2122ba4b2, type: 3}
 --- !u!1 &532447113
@@ -1035,7 +1031,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1074784595}
   - component: {fileID: 1074784594}
-  - component: {fileID: 1074784593}
   m_Layer: 0
   m_Name: Sprite_Box_Red
   m_TagString: Untagged
@@ -1043,28 +1038,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1074784593
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1074784592}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85c636fd00a3f1a428e7d91828bdc3d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snap: 1
-  snapDistanceX: 4.24
-  snapDistanceY: 2.06
-  compatibleDragables: -1
-  audioSource: {fileID: 0}
-  placed: {fileID: 0}
-  drawGizmos: 0
-  OnPlaced:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!212 &1074784594
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1420,6 +1393,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1539913680}
   - component: {fileID: 1539913679}
+  - component: {fileID: 1539913681}
   m_Layer: 0
   m_Name: Sprite_Box_Green
   m_TagString: Untagged
@@ -1495,6 +1469,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1539913681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539913678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85c636fd00a3f1a428e7d91828bdc3d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snap: 1
+  snapDistanceX: 4.24
+  snapDistanceY: 2.06
+  compatibleDragables: -1
+  audioSource: {fileID: 0}
+  placed: {fileID: 0}
+  drawGizmos: 0
+  OnPlaced:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1584204287
 GameObject:
   m_ObjectHideFlags: 0

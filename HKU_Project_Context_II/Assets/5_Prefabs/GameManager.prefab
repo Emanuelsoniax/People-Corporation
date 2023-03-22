@@ -4322,6 +4322,10 @@ MonoBehaviour:
     timeBetweenTicks: 5
     timeAddedEachTick: 10
   timeDisplay: {fileID: 3132326250200367507}
+  daylightCycle:
+    globalLight: {fileID: 0}
+    backgroundTransform: {fileID: 0}
+    displacementPos: {x: -9.142168, y: 100}
 --- !u!114 &3132326249444763220
 MonoBehaviour:
   m_ObjectHideFlags: 0

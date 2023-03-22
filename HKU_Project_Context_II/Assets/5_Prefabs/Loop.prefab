@@ -461,6 +461,7 @@ GameObject:
   - component: {fileID: 3898051652750109474}
   - component: {fileID: 3898051652750109475}
   - component: {fileID: 3898051652750109476}
+  - component: {fileID: 8533684527393938431}
   m_Layer: 0
   m_Name: Loop
   m_TagString: Untagged
@@ -504,7 +505,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 2ae887ef95cc4dd4faf499cb77d2bd92, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -572,6 +573,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8533684527393938431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3898051652750109472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec6f1ab45886c89439ebbecf68e20e8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showOutline: 0
+  outlineThickness: 0.5
+  outlineColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &3898051653291682706
 GameObject:
   m_ObjectHideFlags: 0

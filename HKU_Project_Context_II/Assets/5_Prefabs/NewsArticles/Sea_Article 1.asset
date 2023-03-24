@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 613f36ce6a142f04a831bf2710ae87d2, type: 3}
-  m_Name: Land_Article 1
+  m_Name: Sea_Article 1
   m_EditorClassIdentifier: Assembly-CSharp::NewsArticle
   title: '! BREAKING NEWS ! ! BREAKING NEWS !! '
   intro: 'New international freighter route connecting the Atlantic Ocean and Indian
@@ -18,12 +18,10 @@ MonoBehaviour:
     collaborations, new shipping routes were handled un-professionally. Resulting
     in a mass pollution and new tensions between the two nations. '
   content:
-  - {fileID: 11400000, guid: 039006edd3aa3eb4193980fa3cb06cd5, type: 2}
-  - {fileID: 11400000, guid: 30b9c266e49e7cb4ebfd5de83d22748d, type: 2}
-  - {fileID: 11400000, guid: 69ea8674c30802342862d4cbcdcc237f, type: 2}
-  outro: Everyone is ordered to evacuate the surrounding areas and find shelter in
-    the appointed locations. Due to the fumes and pollution caused by the catastrophe
-    the government is classifying this as a massive ecological disaster. Not only
-    affecting the lives of millions of people, but also causing irreversible damage
-    to the fragile ecosystems of the area. Justice must be served to the one responsible
-    for this careless, cruel and unnecessary disaster.
+  - {fileID: 11400000, guid: 6d0cabd21091c2f4d8db9a97e76ae9de, type: 2}
+  - {fileID: 11400000, guid: a228ecdb09e8b3c419c10f2088814394, type: 2}
+  - {fileID: 11400000, guid: 474ca4d554fde0340a24281eac696b6a, type: 2}
+  outro: Currently corporate committees are in motion trying to find more eco-friendly
+    solutions, says government officials. But we shall just have to wait and see.
+    In the meantime, we should resolve towards individual action to try and lessen
+    the damage caused by the money-grabbing companies.

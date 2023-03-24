@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &2946529916274549301
+--- !u!1001 &8058911557125594922
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -54,14 +54,14 @@ PrefabInstance:
     - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
       propertyPath: newsContent
       value: 
-      objectReference: {fileID: 11400000, guid: 039006edd3aa3eb4193980fa3cb06cd5, type: 2}
+      objectReference: {fileID: 11400000, guid: 69ea8674c30802342862d4cbcdcc237f, type: 2}
     - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
       propertyPath: approvedValues.land
       value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
       propertyPath: documentText.documentTitle
-      value: 'Legislation 142F :  Hydraulic Fracking 01'
+      value: 'Legislation 142F :  H.Fracking City Mines 01'
       objectReference: {fileID: 0}
     - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
       propertyPath: approvedValues.companyIncome
@@ -77,22 +77,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
       propertyPath: declinedValues.companyEconomy
-      value: -0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
-      propertyPath: approvedValues.companyReputation
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
-      propertyPath: declinedValues.companyReputation
       value: -0.1
       objectReference: {fileID: 0}
     - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: approvedValues.companyReputation
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
       propertyPath: documentText.documentDescription
-      value: "Accept legislation to move the Hydraulic Fracking process behind low-income
-        residential areas - saving the company over 78% max. earning and legitimizing
-        a cooperation with the fossil fuel giants. Who promised to initiate a Coca-Cola
-        sponsered marketing campaign benefiting \u201CPeople Corporation\u201D greatly. "
+      value: Open new City Mines nearby the Hydraulic Fracking Area, creating a lot
+        of new jobs and creating a distraction from the fracking being done near
+        the low-income area, making it easier to execute the plans.
       objectReference: {fileID: 0}
     - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
       propertyPath: approvedValues.playerConciousness
@@ -104,7 +99,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2499219003652333674, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
       propertyPath: m_Name
-      value: Land1
+      value: Land 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}

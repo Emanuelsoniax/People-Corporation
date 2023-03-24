@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb14b1a62f8d92e42bc6685a289c2631, type: 3}
+  m_Name: Sky_2
+  m_EditorClassIdentifier: 
+  contentText: "Meanwhile the space program funded by \u201CPeople Corporation ''
+    is facing serious allegations of improper diagnostic analytics, causing the Altair
+    Rocketship trajectory to malfunction. Making it go off-radar. Internal speculations
+    suggest collision damage with space debris but official reports are still holding
+    out before an official statement can be made. People are holding praying events
+    for the safety of its passengers."
+  displayInNews: 0
+  numberOfCards: 2
+  acceptedCards: 0

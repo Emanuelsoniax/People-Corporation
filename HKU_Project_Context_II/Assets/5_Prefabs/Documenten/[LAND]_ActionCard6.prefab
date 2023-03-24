@@ -522,7 +522,7 @@ MonoBehaviour:
     peopleHappiness: 0
     companyReputation: 0.3
     companyEconomy: -0.05
-    playerConciousness: 0.09
+    playerConciousness: 0.1
     companyIncome: 0.09
   declinedValues:
     land: 0

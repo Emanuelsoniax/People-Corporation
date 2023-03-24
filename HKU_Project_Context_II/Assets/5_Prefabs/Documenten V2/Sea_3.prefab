@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &2946529916274549301
+--- !u!1001 &299320268297656965
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -54,45 +54,36 @@ PrefabInstance:
     - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
       propertyPath: newsContent
       value: 
-      objectReference: {fileID: 11400000, guid: 039006edd3aa3eb4193980fa3cb06cd5, type: 2}
+      objectReference: {fileID: 11400000, guid: a228ecdb09e8b3c419c10f2088814394, type: 2}
     - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
-      propertyPath: approvedValues.land
+      propertyPath: approvedValues.sea
       value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
       propertyPath: documentText.documentTitle
-      value: 'Legislation 142F :  Hydraulic Fracking 01'
+      value: 'Request for Collaboration : Freighter Ship A.-I. Route 03'
       objectReference: {fileID: 0}
     - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
       propertyPath: approvedValues.companyIncome
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
-      propertyPath: declinedValues.companyIncome
-      value: -0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
-      propertyPath: approvedValues.companyEconomy
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
-      propertyPath: declinedValues.companyEconomy
-      value: -0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
-      propertyPath: approvedValues.companyReputation
       value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
-      propertyPath: declinedValues.companyReputation
+      propertyPath: declinedValues.companyIncome
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: approvedValues.companyEconomy
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: declinedValues.companyEconomy
       value: -0.1
       objectReference: {fileID: 0}
     - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
       propertyPath: documentText.documentDescription
-      value: "Accept legislation to move the Hydraulic Fracking process behind low-income
-        residential areas - saving the company over 78% max. earning and legitimizing
-        a cooperation with the fossil fuel giants. Who promised to initiate a Coca-Cola
-        sponsered marketing campaign benefiting \u201CPeople Corporation\u201D greatly. "
+      value: "Accept a side project for a quick buck. Dispose thrash from Southern
+        Europe\u2019s cities in the North Atlantic Ocean, far from the coast of Sierra
+        Leone. "
       objectReference: {fileID: 0}
     - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
       propertyPath: approvedValues.playerConciousness
@@ -104,7 +95,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2499219003652333674, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
       propertyPath: m_Name
-      value: Land1
+      value: Sea_3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}

@@ -20,6 +20,8 @@ public class FileCabinet : Target
         {
             placedDoc.declinedValues.ApplyValues();
             placedDoc.placed = true;
+            placedDoc.GetComponent<SpriteRenderer>().sprite = placedDoc.placedSprite;
+            Destroy(placedDoc.GetComponent<Outliner>());
             Destroy(placedDoc);
         }
 
@@ -28,6 +30,8 @@ public class FileCabinet : Target
             placedDoc.approvedValues.ApplyValues();
             placedDoc.newsContent.AcceptDoc();
             placedDoc.placed = true;
+            placedDoc.GetComponent<SpriteRenderer>().sprite = placedDoc.placedSprite;
+            Destroy(placedDoc.GetComponent<Outliner>());
             Destroy(placedDoc);
         }
 

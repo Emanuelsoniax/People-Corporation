@@ -27,13 +27,14 @@ public class Document : Dragable, IStampable
     private Sprite declinedSprite;
     [SerializeField]
     private Sprite approvedSprite;
+    public Sprite placedSprite;
 
 
     private void Start()
     {
         
         UpdateStatus();
-        UpdateText();
+        //UpdateText();
     }
 
     private void UpdateText()

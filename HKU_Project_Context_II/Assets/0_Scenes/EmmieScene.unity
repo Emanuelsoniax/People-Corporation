@@ -1189,14 +1189,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
-    - target: {fileID: 3132326249444763221, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
-      propertyPath: daylightCycle.globalLight
-      value: 
-      objectReference: {fileID: 1940219785}
-    - target: {fileID: 3132326249444763221, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
-      propertyPath: daylightCycle.backgroundTransform
-      value: 
-      objectReference: {fileID: 2020233332}
     - target: {fileID: 3132326249490004950, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0

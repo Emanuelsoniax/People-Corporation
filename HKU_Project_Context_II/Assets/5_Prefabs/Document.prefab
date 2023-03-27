@@ -152,8 +152,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 2
   audioSource: {fileID: 2499219003652333668}
-  pickup: {fileID: 0}
-  dropped: {fileID: 0}
+  pickup: {fileID: 8300000, guid: d519fe835de10784596fc0299d607535, type: 3}
+  dropped: {fileID: 8300000, guid: 715ede1ad1d859d44ad1fab2fd1c6257, type: 3}
   placed: 0
   originalPos: {x: 0, y: 0}
   upscaling: {x: 1.5, y: 1.5, z: 1.5}

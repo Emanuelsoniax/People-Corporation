@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &299320268297656965
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2499219003652333665, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333665, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333665, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333665, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333665, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333665, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333665, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333665, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333665, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333665, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333665, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: newsContent
+      value: 
+      objectReference: {fileID: 11400000, guid: a228ecdb09e8b3c419c10f2088814394, type: 2}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: approvedValues.sea
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: documentText.documentTitle
+      value: 'Request for Collaboration : Freighter Ship A.-I. Route 03'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: approvedValues.companyIncome
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: declinedValues.companyIncome
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: approvedValues.companyEconomy
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: declinedValues.companyEconomy
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: documentText.documentDescription
+      value: "Accept a side project for a quick buck. Dispose thrash from Southern
+        Europe\u2019s cities in the North Atlantic Ocean, far from the coast of Sierra
+        Leone. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: approvedValues.playerConciousness
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: declinedValues.playerConciousness
+      value: -0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333674, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: m_Name
+      value: Sea_3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}

@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5664073770906247434
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2499219003652333665, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333665, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333665, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333665, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333665, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333665, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333665, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333665, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333665, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333665, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333665, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: newsContent
+      value: 
+      objectReference: {fileID: 11400000, guid: 69ea8674c30802342862d4cbcdcc237f, type: 2}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: approvedValues.land
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: documentText.documentTitle
+      value: H.Fracking City Mines 02
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: approvedValues.companyIncome
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: declinedValues.companyIncome
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: approvedValues.companyEconomy
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: declinedValues.companyEconomy
+      value: -0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: approvedValues.companyReputation
+      value: -0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: documentText.documentDescription
+      value: "Increase oil, mineral and shipping possibilities to foreign countries.
+        Building better relations with different companies will be rough at first.
+        In the future greatly increasing People Corporation\u2019s World-Wide reach
+        into this new industry. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: approvedValues.playerConciousness
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: declinedValues.playerConciousness
+      value: -0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333674, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: m_Name
+      value: Land 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}

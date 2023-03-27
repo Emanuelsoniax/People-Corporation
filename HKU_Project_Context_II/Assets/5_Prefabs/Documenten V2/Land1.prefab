@@ -51,9 +51,60 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: newsContent
+      value: 
+      objectReference: {fileID: 11400000, guid: 039006edd3aa3eb4193980fa3cb06cd5, type: 2}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: approvedValues.land
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: documentText.documentTitle
+      value: 'Legislation 142F :  Hydraulic Fracking 01'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: approvedValues.companyIncome
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: declinedValues.companyIncome
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: approvedValues.companyEconomy
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: declinedValues.companyEconomy
+      value: -0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: approvedValues.companyReputation
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: declinedValues.companyReputation
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: documentText.documentDescription
+      value: "Accept legislation to move the Hydraulic Fracking process behind low-income
+        residential areas - saving the company over 78% max. earning and legitimizing
+        a cooperation with the fossil fuel giants. Who promised to initiate a Coca-Cola
+        sponsered marketing campaign benefiting \u201CPeople Corporation\u201D greatly. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: approvedValues.playerConciousness
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: declinedValues.playerConciousness
+      value: -0.15
+      objectReference: {fileID: 0}
     - target: {fileID: 2499219003652333674, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
       propertyPath: m_Name
-      value: Document
+      value: Land1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}

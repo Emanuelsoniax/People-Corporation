@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &27647907117793351
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2499219003652333665, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333665, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333665, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333665, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333665, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333665, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333665, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333665, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333665, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333665, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333665, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: newsContent
+      value: 
+      objectReference: {fileID: 11400000, guid: 6d0cabd21091c2f4d8db9a97e76ae9de, type: 2}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: approvedValues.sea
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: documentText.documentTitle
+      value: 'Request for Collaboration  : Freighter Ship A.-I. Route 02'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: approvedValues.companyIncome
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: declinedValues.companyIncome
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: approvedValues.companyEconomy
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: declinedValues.companyEconomy
+      value: -0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: approvedValues.companyReputation
+      value: -0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: documentText.documentDescription
+      value: 'To outcompete other companies, secretly sign a treaty with certain
+        parts of Asia to let them shortcut the ships route through protected sea
+        areas, which would increase production delivery by 55%.  '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: approvedValues.playerConciousness
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: declinedValues.playerConciousness
+      value: -0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499219003652333674, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
+      propertyPath: m_Name
+      value: Sea_2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}

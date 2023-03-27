@@ -49,7 +49,7 @@ public class Target : MonoBehaviour
             timeElapsed += Time.deltaTime;
         }
         document.transform.position = transform.position;
-            document.transform.eulerAngles = new Vector3(0, 0, 90);
+            //document.transform.eulerAngles = new Vector3(0, 0, 90);
         }
         else
         {

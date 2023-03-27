@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2560275193969166468}
   - component: {fileID: 2029907082881897486}
   - component: {fileID: 3911173778723580784}
+  - component: {fileID: 4951428864614238429}
   m_Layer: 0
   m_Name: Stamp_Approve
   m_TagString: Untagged
@@ -55,7 +56,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 2ae887ef95cc4dd4faf499cb77d2bd92, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -216,3 +217,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4951428864614238429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7705652313548718269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec6f1ab45886c89439ebbecf68e20e8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showOutline: 1
+  outlineThickness: 0.5
+  outlineColor: {r: 1, g: 0, b: 0, a: 1}

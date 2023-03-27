@@ -12,12 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 613f36ce6a142f04a831bf2710ae87d2, type: 3}
   m_Name: Land_Article 1
   m_EditorClassIdentifier: Assembly-CSharp::NewsArticle
-  title: '! BREAKING NEWS ! ! CATASTROPHIC EVENT !  '
-  intro: 'Millions face consequences due to a fracking incident caused by numerous
-    fossil fuel companies. Fracking is a method used to extract gasses from the underground,
-    by creating minute explosions the gasses escape the rich soils, making it possible
-    to extract and later sell the fuels for large amounts. Benefiting no one but
-    the companies selling them. '
+  title: '! BREAKING NEWS ! ! BREAKING NEWS !! '
+  intro: 'New international freighter route connecting the Atlantic Ocean and Indian
+    Ocean has caused a lot of uproar. Due to newly implemented legislations and uncoordinated
+    collaborations, new shipping routes were handled un-professionally. Resulting
+    in a mass pollution and new tensions between the two nations. '
   content:
   - {fileID: 11400000, guid: 039006edd3aa3eb4193980fa3cb06cd5, type: 2}
   - {fileID: 11400000, guid: 30b9c266e49e7cb4ebfd5de83d22748d, type: 2}

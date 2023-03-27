@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb14b1a62f8d92e42bc6685a289c2631, type: 3}
+  m_Name: Sea_2
+  m_EditorClassIdentifier: 
+  contentText: 'Meanwhile a heavy investigation is being held by African officials
+    who are outraged by their latest findings. Apparently after the opening of the
+    new Atlantic-Indian shipping route enmasse of thrash washed up on the coast of
+    Sierra Leone. Tourists and residents are both battling with the infections and
+    pollution this has caused, the amount of infected civilians is currently unknown.  '
+  displayInNews: 0
+  numberOfCards: 1
+  acceptedCards: 0

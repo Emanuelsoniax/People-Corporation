@@ -38,6 +38,8 @@ public class Manager : MonoBehaviour
     private Clock clock = new Clock();
     [SerializeField]
     private TextMeshProUGUI timeDisplay;
+    [SerializeField]
+    private DaylightCycle daylightCycle;
 
 
     private void Start()
@@ -141,6 +143,8 @@ public class Manager : MonoBehaviour
    
             gamePhase = GamePhase.Workday;
             clock.Start();
+            StartCoroutine(daylightCycle.LerpColor(240));
+            StartCoroutine(daylightCycle.ScrollBackground(240));
         }
 
         //set phase to EndWorkday

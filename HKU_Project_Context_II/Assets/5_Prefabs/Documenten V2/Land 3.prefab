@@ -45,9 +45,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5582215233127628617, guid: d3eaa6d1a4049b447b34954201fdfdee, type: 3}
       propertyPath: documentText.documentDescription
-      value: 'Drill additional holes to circumvent chemical distribution, safely
-        tapping water from the central pipe system and decrease water cost by -89%.
-        In addition, send Gift Bags to nearby resident homes. '
+      value: 'Drill additional holes to circumvent chemical distribution, tapping
+        water from the central pipe system and decrease water cost by -89%. In addition,
+        send Gift Bags to nearby residential homes. '
       objectReference: {fileID: 0}
     - target: {fileID: 5582215233127628617, guid: d3eaa6d1a4049b447b34954201fdfdee, type: 3}
       propertyPath: approvedValues.playerConciousness

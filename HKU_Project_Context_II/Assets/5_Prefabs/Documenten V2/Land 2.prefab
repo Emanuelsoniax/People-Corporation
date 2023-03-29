@@ -86,9 +86,8 @@ PrefabInstance:
     - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
       propertyPath: documentText.documentDescription
       value: 'Hire a cheaper chemical company, who promise the same quality of hazard
-        control. Shortening execution timers and fast-tracking the process with a
-        41% increased production rate.  NOTE: The higher-ups will love this, increasing
-        your promotion possibilities greatly.  '
+        control. NOTE: The higher-ups will love this, increasing your promotion possibilities
+        greatly.  '
       objectReference: {fileID: 0}
     - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
       propertyPath: approvedValues.playerConciousness

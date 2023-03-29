@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731715, g: 0.13414735, b: 0.121078536, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2343,6 +2343,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 278973494225634232, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
+      propertyPath: m_text
+      value: 'Conscience
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763674010755862916, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
+      propertyPath: m_text
+      value: "Welcome,\n\nEmployee ID. 771.94 - to People CorporationTM! \n\nThe
+        nr. 1 leading corporation in global interconnectivity and resource management.\n\nYour
+        goal is to extract the Earth's resources as efficiently as possible, by accepting
+        and denying incomming Legislation Documents.\n\nYour choices impact the world
+        gravely. So, choose wisely and always keep the companies best interests first
+        and foremost. \n\nNow for your Tasks: \n\n\u2022\tClick on \u201CStart Workday\u201D
+        to begin your day. Your workday will be over once the clock strikes 17:00.\n\n\u2022\tHover
+        over the desk to  see the interactable objects. Use Drag and Drop to move
+        them around. Currently available are : Accept (Green) and Deny (Red) stamps
+        and the Magnifying glass.\n\n\u2022\tOnce a document is either \"Accepted\"
+        or \"Denied\", drag it into the green file cabinet. This will affect the
+        resource bars on the screens.\n\n\u2022\tUse the Magnifying Glass onto the
+        documents to zoom in and read the documents.\n\n\u2022\tKeep track of the
+        resource bars. If one drops too low we will not be able to extract more of
+        the Earth's resources. \n\n\u2022\tGAME OVER when:\n\t\t-Company Income/Reputation
+        drop too low\n\t\t-Daily Target hasn't been met (Stocks) of 60%\n\t\t-Your
+        Conscience bar is filled to 100%\n\nYou'd better comply for your own safety,
+        as we deal with sensative and secrative information. If contract breach occurs,
+        you will be disposed of indefinitely.\n\nKind regards,\r\n-E\r\n\r\n\r\n"
+      objectReference: {fileID: 0}
     - target: {fileID: 1925226289764754025, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -2552,6 +2580,10 @@ PrefabInstance:
       value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 3132326249444763221, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
+      propertyPath: stats.peopleHappiness
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3132326249444763221, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
       propertyPath: daylightCycle.globalLight
       value: 
       objectReference: {fileID: 621844836}
@@ -2570,6 +2602,28 @@ PrefabInstance:
     - target: {fileID: 3132326249490004950, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6370459815756180644, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
+      propertyPath: m_text
+      value: "Welcome,\n\n\nEmployee ID. 771.94 - to People CorporationTM! \n\nYour
+        goal is to extract the Earth's resources as efficiently as possible, by accepting
+        and denying incomming Legislation Documents.\n\nNow for your Tasks: \n\n\u2022\tClick
+        on \u201CStart Workday\u201D to begin your day. Your workday will be over
+        once the clock strikes 17:00.\n\n\u2022\tHover over the desk to  see the
+        interactable objects. Use Drag and Drop to move them around. Currently available
+        are : Accept (Green) and Deny (Red) stamps and the Magnifying glass.\n\n\u2022\tOnce
+        a document is either \"Accepted\" or \"Denied\", drag it into the green file
+        cabinet. This will affect the resource bars on the screens.\n\n\u2022\tUse
+        the Magnifying Glass onto the documents to zoom in and read the documents.\n\n\u2022\tKeep
+        track of the resource bars. If one drops too low we will not be able to extract
+        more of the Earth's resources. \n\n\u2022\tGAME OVER when:\n\t\t-Company
+        Income/Reputation drop too low\n\t\t-Daily Target hasn't been met (Stocks)
+        of 60%\n\t\t-Your Conscience bar is filled to 100%\n\nYour choices impact
+        the world gravely. So, choose wisely and always keep the companies best interests
+        first and foremost. \n\nYou'd better comply for your own safety, as we deal
+        with sensative and secrative information. If contract breach occurs, you
+        will be disposed of indefinitely.\n\nKind regards,\r\n-E\r \n\nPeople CorporationTM!\nThe
+        nr. 1 leading corporation in global interconnectivity and resource management.\n\r"
       objectReference: {fileID: 0}
     - target: {fileID: 8759765629437103354, guid: 9b4753728a81949499b3b9fdfef17f1f, type: 3}
       propertyPath: m_AnchorMax.x

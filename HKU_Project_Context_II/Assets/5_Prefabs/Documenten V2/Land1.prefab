@@ -90,9 +90,9 @@ PrefabInstance:
     - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
       propertyPath: documentText.documentDescription
       value: "Accept legislation to move the Hydraulic Fracking process behind low-income
-        residential areas - saving the company over 78% max. earning and legitimizing
-        a cooperation with the fossil fuel giants. Who promised to initiate a Coca-Cola
-        sponsered marketing campaign benefiting \u201CPeople Corporation\u201D greatly. "
+        residential areas - saving the company over 78% max. earning and initiate
+        a Coca-Cola sponsered marketing campaign benefiting \u201CPeople Corporation\u201D
+        greatly. "
       objectReference: {fileID: 0}
     - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
       propertyPath: approvedValues.playerConciousness

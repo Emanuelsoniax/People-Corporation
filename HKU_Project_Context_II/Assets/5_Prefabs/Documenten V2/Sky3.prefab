@@ -89,10 +89,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
       propertyPath: documentText.documentDescription
-      value: "Launch new \u201CAltair Rocketship\u201D project, prematurely. If we
-        wait much longer Amazon Space Program will outcompete us, causing us to lose
-        our window of opportunity to increase junk transport into orbit, missing
-        over 184% of potential profits."
+      value: "Launch new \u201CAltair Rocketship\u201D project, prematurely. Outcompete
+        Amazon Space Program, to increase space thrash transport into orbit, if we
+        don't launch we could miss over 184% of potential profits."
       objectReference: {fileID: 0}
     - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
       propertyPath: approvedValues.playerConciousness

@@ -22,8 +22,8 @@ public class Shredder : Target
 
     private void Shred(GameObject documentToShred)
     {
-        StartCoroutine(MoveThroughShredder(documentToShred.transform));
-        Destroy(documentToShred,6);
+        //StartCoroutine(MoveThroughShredder(documentToShred.transform));
+        Destroy(documentToShred,0);
     }
 
     private IEnumerator MoveThroughShredder(Transform documentToShred)

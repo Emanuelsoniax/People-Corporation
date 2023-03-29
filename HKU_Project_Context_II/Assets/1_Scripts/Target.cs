@@ -37,7 +37,11 @@ public class Target : MonoBehaviour
         if (!document.placed)
         {
             Debug.Log("Dragable Placed");
-            audioSource.PlayOneShot(placed);
+            if(audioSource != null)
+            {
+             audioSource.PlayOneShot(placed);
+
+            }
         }
 
         if (snap)

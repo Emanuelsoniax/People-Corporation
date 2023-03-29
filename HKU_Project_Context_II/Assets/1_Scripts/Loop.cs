@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
+using System;
 
 public class Loop : MonoBehaviour
 {
@@ -12,12 +14,24 @@ public class Loop : MonoBehaviour
     public float snapDistanceX;
     [Tooltip("The distance in which a Stampable will be able to be stamped")]
     public float snapDistanceY;
+    
+    [Header ("Display")]
     [SerializeField]
     private GameObject zoomCanvas;
     [SerializeField]
     private TextMeshProUGUI titleText;
     [SerializeField]
     private TextMeshProUGUI descriptionText;
+
+    [SerializeField]
+    private Image land;
+    [SerializeField]
+    private Image sea;
+    [SerializeField]
+    private Image sky;
+    [SerializeField]
+    private Image income;
+
 
     [Header("Audio")]
     [SerializeField]
@@ -87,6 +101,34 @@ public class Loop : MonoBehaviour
 
         titleText.text = _document.documentText.documentTitle;
         descriptionText.text = _document.documentText.documentDescription;
+
+        ConfiqureIcons(_document);
+    }
+
+    private void ConfiqureIcons(Document document)
+    {
+        if (document.approvedValues.land >= 0)
+        {
+            land.color = Color.green;
+        } else land.color = Color.red;
+
+        if (document.approvedValues.sky >= 0)
+        {
+            sky.color = Color.green;
+        }
+        else sky.color = Color.red;
+
+        if (document.approvedValues.sea >= 0)
+        {
+            sea.color = Color.green;
+        }
+        else sea.color = Color.red;
+
+        if (document.approvedValues.companyIncome >= 0)
+        {
+            income.color = Color.green;
+        }
+        else income.color = Color.red;
     }
 
     private void ReturnToOriginalPos()

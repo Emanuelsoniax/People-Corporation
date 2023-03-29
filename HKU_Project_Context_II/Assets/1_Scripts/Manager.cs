@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class Manager : MonoBehaviour
@@ -90,7 +91,12 @@ public class Manager : MonoBehaviour
             SwitchPhase(3);
         }
 
-        if(stats.PlayerConciousness >= 1 || stats.EarthStats <= 0 || printer.cardDeck.Count == 0 && FindObjectsOfType<Document>().Length == 0 || stats.CompanyStats <=0)
+        if(stats.PlayerConciousness >= 1 || printer.cardDeck.Count == 0 && FindObjectsOfType<Document>().Length == 0 || stats.CompanyStats <=0)
+        {
+            SwitchPhase(3);
+        }
+
+        if(stats.Land <= 0 || stats.Sky <=0 || stats.Sea <= 0)
         {
             SwitchPhase(3);
         }
@@ -156,7 +162,12 @@ public class Manager : MonoBehaviour
             cam.cameraLocked = true;
         }
     }
+public void ReloadScene()
+{
+        SceneManager.LoadScene(0);
 }
+}
+
 
 [System.Serializable]
 public class Stats
@@ -179,6 +190,9 @@ public class Stats
         }
     }
     [SerializeField]
+    private Slider landSlider;
+
+    [SerializeField]
     private float sea;
     public float Sea
     {
@@ -195,6 +209,8 @@ public class Stats
         }
     }
     [SerializeField]
+    private Slider seaSlider;
+    [SerializeField]
     private float sky;
     public float Sky
     {
@@ -210,6 +226,8 @@ public class Stats
             }
         }
     }
+    [SerializeField]
+    private Slider skySlider;
     [SerializeField]
     private float peopleHappiness;
     public float PeopleHappiness
@@ -232,15 +250,15 @@ public class Stats
     private float earthStats;
     public float EarthStats
     {
-        get { return earthStats = PeopleHappiness + (Land + Sea + Sky); }
+        get { return earthStats = (Land + Sea + Sky); }
         set { earthStats = value;
             if (earthStats < 0)
             {
                 earthStats = 0;
             }
-            if (earthStats > 4)
+            if (earthStats > 3)
             {
-                earthStats = 4;
+                earthStats = 3;
             }
             UpdateUI();
             }
@@ -351,9 +369,11 @@ public class Stats
 
     public void UpdateUI()
     {
-        earthSlider.value = EarthStats;
         companySlider.value = CompanyStats;
         conciousnessSlider.value = PlayerConciousness;
         incomeSlider.value = CompanyIncome;
+        landSlider.value = Land;
+        skySlider.value = Sky;
+        seaSlider.value = Sea;
     }
 }

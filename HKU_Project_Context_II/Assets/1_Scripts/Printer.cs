@@ -23,6 +23,11 @@ public class Printer : MonoBehaviour
 
     private float timer = 0;
 
+    [Header("Audio")]
+    [SerializeField]
+    private AudioClip printAudio;
+    [SerializeField]
+    private AudioSource source;
     public void Print()
     {
         if (cardDeck.Count == 0)
@@ -46,7 +51,7 @@ public class Printer : MonoBehaviour
     private IEnumerator PrintDocument()
     {
         //speel audio af
-
+        source.PlayOneShot(printAudio);
 
         //Get random card from deck
         GameObject cardToSpawn = cardDeck[Random.Range(0, cardDeck.Count)];

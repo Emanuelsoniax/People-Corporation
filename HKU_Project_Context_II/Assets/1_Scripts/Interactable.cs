@@ -16,7 +16,13 @@ public class Interactable : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if(animator != null)
+        {
         animator.SetTrigger("animate");
+        }
+        if(source != null)
+        {
         source.PlayOneShot(audioClip);
+        }
     }
 }

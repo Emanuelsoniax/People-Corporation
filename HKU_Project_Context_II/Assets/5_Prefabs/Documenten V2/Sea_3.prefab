@@ -81,9 +81,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
       propertyPath: documentText.documentDescription
-      value: "Accept a side project for a quick buck. Dispose thrash from Southern
-        Europe\u2019s cities in the North Atlantic Ocean, far from the coast of Sierra
-        Leone. "
+      value: "Quick buck side project. Dispose thrash from Southern Europe\u2019s
+        cities in the North Atlantic Ocean, far from the coast of Sierra Leone. "
       objectReference: {fileID: 0}
     - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
       propertyPath: approvedValues.playerConciousness

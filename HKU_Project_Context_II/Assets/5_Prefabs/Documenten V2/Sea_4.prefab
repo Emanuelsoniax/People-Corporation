@@ -87,8 +87,8 @@ PrefabInstance:
       propertyPath: documentText.documentDescription
       value: "Incorporate \u201CChemical Freighters\u201D en route near Dagestan
         borders, collaborating with top-tier scientists who will produce new ways
-        to consume food. Forced to increase workload for ship employees in order
-        to meet new standards. "
+        to chimcally alter food. Forced to increase workload for ship employees in
+        order to meet new standards. "
       objectReference: {fileID: 0}
     - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
       propertyPath: approvedValues.playerConciousness

@@ -85,8 +85,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
       propertyPath: documentText.documentDescription
-      value: 'Instead of building new ships for the routes, find a company that misuses
-        their current freight ships and out-buy the company currently owning them. '
+      value: 'Instead of building new ships for the routes, find small family company
+        that misuses their current freight ships and out-buy them. '
       objectReference: {fileID: 0}
     - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
       propertyPath: approvedValues.playerConciousness

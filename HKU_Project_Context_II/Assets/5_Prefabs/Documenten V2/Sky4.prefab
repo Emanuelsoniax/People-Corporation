@@ -90,8 +90,8 @@ PrefabInstance:
     - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
       propertyPath: documentText.documentDescription
       value: "Expand \u201CAltair Rocketship\u201D project to allow high paying passengers
-        and one \u201CGolden Ticket\u201D reserved for a low income family to board
-        the ship and increase positive engagement on social media.  "
+        aboard and one \u201CGolden Ticket\u201D from a low income family to increase
+        positive social media engagement.  "
       objectReference: {fileID: 0}
     - target: {fileID: 2499219003652333667, guid: 01d7e5961bdfa264daf063b5922b59c2, type: 3}
       propertyPath: approvedValues.playerConciousness
